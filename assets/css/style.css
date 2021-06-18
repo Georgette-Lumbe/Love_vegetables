@@ -80,11 +80,16 @@ h2 {
 
 #main-page,
 #rules-box,
-#quiz-box {
+#quiz-box,
+#feedback-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /*Help from Youtube Tutorial*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0,.2)
+                0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 /*Style start quiz button */
@@ -357,6 +362,54 @@ button.restart {
 .next-btn:hover {
     background: #F8E9E9;
     color: #CBAC88;
+}
+
+/*Feedback-box*/
+
+#feedback-box {
+    display: none;
+    background: #69995d;
+    color: #F8E9E9;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#feedback-box .icon {
+    font-size: 100px;
+    color: #F8E9E9;
+    margin-bottom: 10px;
+}
+
+.complete-box {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.score-text span {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.score-text span p {
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+#feedback-box .buttons {
+    display: flex;
+    margin: 20px 0;
+}
+
+#feedback-box .buttons button {
+    margin: 0 10px;
+    height: 40px;
 }
 
 /*Footer*/
