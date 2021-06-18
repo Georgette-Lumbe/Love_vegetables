@@ -103,3 +103,35 @@ h2 {
     color: #69995D;
     border: 2px solid #69995D;
 }
+
+/*Footer*/
+
+footer {
+    background-color: #69995D;
+    height: 70px;
+}
+
+#social-media {
+    width: fit-content;
+    margin: auto;
+}
+
+#social-media ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#social-media i {
+    font-size: 200%;
+    color: #F8E9E9;
+}
+
+#social-media li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+#social-media i:hover {
+    color: #394648;
+    cursor: pointer;
+}
