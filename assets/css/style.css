@@ -78,7 +78,8 @@ h2 {
     overflow: hidden;
 }
 
-#main-page {
+#main-page,
+#rules-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,7 +102,87 @@ h2 {
 .start-btn:hover {
     background-color: #F8E9E9;
     color: #69995D;
-    border: 2px solid #69995D;
+    
+}
+
+/*Style Instructions box*/
+
+#rules-box{
+    width: 520px;
+    border-radius: 5px;
+    background-color: #69995D; 
+    color: #F8E9E9;
+    display: none;
+}
+
+.rules-title { 
+    font-size: 30px;
+    font-weight: 500;
+    width: 450px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F8E9E9;
+
+    padding: 0 35px;
+}
+
+.rules-list {
+    padding: 15px 35px;
+}
+
+.rule {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.rule span {
+    color: #EDB6A3;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    height: 60px;
+    padding: 0 35px;
+    border-top: 1px solid #F8E9E9;;
+    align-items: center;
+
+    /*help from youtube tutorial*/
+    justify-content: flex-end;
+}
+
+/*Style quit and restart buttons*/
+
+.buttons button {
+    height: 40px;
+    width: 90px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #F8E9E9;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    /*help from youtube tutorial*/
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    color: #394648 ;
+    background-color: #EDB6A3;
+}
+
+button.quit {
+    color: #69995d;
+    border-color: #69995D;
+}
+
+button.restart {
+    color: #F8E9E9;
+    border-color: #F8E9E9;
+    background-color: #69995D;
 }
 
 /*Footer*/
