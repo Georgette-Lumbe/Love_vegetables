@@ -70,7 +70,7 @@ h2 {
     border-bottom: 2px solid #F8E9E9;
 }
 
-/*Homepage Main section*/
+/*Main section of Homepage*/
 
 #main {
     width: 100%;
@@ -79,7 +79,8 @@ h2 {
 }
 
 #main-page,
-#rules-box {
+#rules-box,
+#quiz-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -184,6 +185,16 @@ button.restart {
     border-color: #F8E9E9;
     background-color: #69995D;
 }
+
+/*Main section of Quiz page*/
+
+#quiz-box {
+    width: 600px;
+    color: #F8E9E9;
+    background-color: #69995D;
+}
+
+
 
 /*Footer*/
 
