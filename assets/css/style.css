@@ -206,8 +206,8 @@ button.restart {
 
 #quiz-box {
     width: 600px;
-    color: #F8E9E9;
-    background-color: #69995D;
+    color: #394648;
+    background-color: #F8E9E9;
     border-radius: 5px;
 
     /*reverse the top of quiz-box above*/
@@ -219,7 +219,7 @@ button.restart {
     z-index: 99;
     height: 70px;
     padding: 0 30px;
-    border-bottom: 2px solid #F8E9E9;
+    border-bottom: 2px solid #394648;
     display: flex;
     align-items: center;
 
@@ -251,7 +251,7 @@ button.restart {
     border-radius: 5px;
     padding: 0 8px;
     background: #CBAC88;
-    border: 1px solid #EDB6A3   ;
+    border: 1px solid #69995D;
 }
 
 .time-text {
@@ -265,8 +265,8 @@ button.restart {
 .timer-seconds {
     font-size: 17px;
     font-weight: 600;
-    background: #69995D;
-    color: #F8E9E9;
+    background: #F8E9E9;
+    color: #394648;
     height: 30px;
     width: 45px;
     line-height: 30px;
@@ -277,7 +277,7 @@ button.restart {
 
 .questions {
     padding: 25px 30px 20px 30px;
-    background: #69995D;
+    background: #F8E9E9;
 }
 
 .questions-text {
@@ -293,7 +293,7 @@ button.restart {
 .option {
     font-size: 17px;
     border: 1px solid #CBAC88;
-    background: #CBAC88;
+    background: #cbac88;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 15px;
@@ -307,7 +307,7 @@ button.restart {
 .option:hover {
     color:#69995D;
     background-color:#F8E9E9 ;
-    border: #69995D;
+    border: 2px solid #69995D;
 }
 
 /*help from Stack overflow*/
@@ -327,7 +327,7 @@ button.restart {
 }
 
 .icon-tick {
-    color: #69995d;
+    color: #69995D;
     background-color: #bfd4b9;
     border: #69995D;
     border-radius: 100%;
@@ -342,7 +342,7 @@ button.restart {
 
 /*Next and Restart button*/
 
-.bottom{
+.bottom {
     height: 60px;
     width: 530px;
     padding: 0 30px;
@@ -352,21 +352,20 @@ button.restart {
 }
 
 .next-btn {
+    width: 70px;
     height: 40px;
     padding: 0 13px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     cursor: pointer;
     color: #F8E9E9;
-    background: #CBAC88;
-    border: none;
+    background: #69995D;
     border-radius: 5px;
-    outline: none;
 }
 
 .next-btn:hover {
     background: #F8E9E9;
-    color: #CBAC88;
+    color: #394648;
 }
 
 /*Feedback-box*/
