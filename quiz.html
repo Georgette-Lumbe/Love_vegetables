@@ -27,10 +27,10 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="quiz.html">Quiz</a>
+                    <a href="quiz.html" class="active">Quiz</a>
                 </li>
                 <li>
                     <a href="help.html">Help</a>
@@ -40,43 +40,48 @@
     </header>
 
     <!--==========QUIZ BOX==========-->
-    <section id="main">
+    <section id="quiz-area">
         <div id="quiz-box">
-    
-            <!--==========Timer==========-->
-            <div class="timer">
-                <div class="time-left">Time Left</div>
-                <div class="timer-seconds">20</div>
+
+            <div class="quiz-top">
+                <div class="total-question">
+                    <span><p>2</p>of<p>5</p>Questions</span>
+                </div>
+                <!--==========Timer==========-->
+                <div class="timer">
+                    <div class="time-text">Time Left</div>
+                    <div class="timer-seconds">20</div>
+                </div>
             </div>
 
     <!--==========QUESTIONS AND OPTIONS LIST==========-->
-            <div class="questions-text">
-                <span>Which of these vegetables was the first to be grown in space?</span>
-            </div>
-            <div class="option-list">
-                <div class="option">
-                    <span>Radish</span>
-                    <div class="tick-cross"><i class="fas fa-times"></i></div>
+            <div class="questions">
+                <div class="questions-text">
+                    <span>Which of these vegetables was the first to be grown in space?</span>
                 </div>
-                <div class="option">
-                    <span>Peas</span>
-                    <div class="tick-cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Swede</span>
-                    <div class="tick-cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Potato</span>
-                    <div class="tick-icon"><i class="fas fa-check"></i></div>
+                <div class="option-list">
+                    <div class="option">
+                        <span>Radish</span>
+                        <div class="icon-cross"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Peas</span>
+                        <div class="icon-cross"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Swede</span>
+                        <div class="icon-cross"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Potato</span>
+                        <div class="icon-tick"><i class="fas fa-check"></i></div>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div class="total-question">
-                <span><p>2</p>Of<p>5</p>Questions</span>
-                </div>
-
+            <!--==========Next and Restart button-->
+            <div class="bottom">
+                <button class="restart">Restart</button>
                 <button class="next-btn">Next</button>
             </div>
         </div>

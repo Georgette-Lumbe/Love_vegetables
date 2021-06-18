@@ -72,7 +72,7 @@ h2 {
 
 /*Main section of Homepage*/
 
-#main {
+#home-area {
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -188,13 +188,176 @@ button.restart {
 
 /*Main section of Quiz page*/
 
+#quiz-area {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
 #quiz-box {
     width: 600px;
     color: #F8E9E9;
     background-color: #69995D;
+    border-radius: 5px;
+
+    /*reverse the top of quiz-box above*/
+    top: 58%;
 }
 
+.quiz-top {
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    border-bottom: 2px solid #F8E9E9;
+    display: flex;
+    align-items: center;
 
+    /*Help from Youtube tutorials*/
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.total-question span {
+    display: flex;
+    user-select: none;
+}
+
+.total-question span p {
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.total-question span p:first-child {
+    padding-left: 0;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 8px;
+    background: #CBAC88;
+    border: 1px solid #EDB6A3   ;
+}
+
+.time-text {
+    font-weight: 400;
+    font-size: 17px;
+
+    /*Help from Stack Overflow*/
+    user-select: none;
+}
+
+.timer-seconds {
+    font-size: 17px;
+    font-weight: 600;
+    background: #69995D;
+    color: #F8E9E9;
+    height: 30px;
+    width: 45px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #69995D;
+}
+
+.questions {
+    padding: 25px 30px 20px 30px;
+    background: #69995D;
+}
+
+.questions-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.option-list {
+    display: block;
+    padding: 20px 0;
+}
+
+.option {
+    font-size: 17px;
+    border: 1px solid #CBAC88;
+    background: #CBAC88;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+.option:hover {
+    color:#69995D;
+    background-color:#F8E9E9 ;
+    border: #69995D;
+}
+
+/*help from Stack overflow*/
+.option:last.child {
+    margin-bottom: 0;
+}
+
+.icon-cross i,
+.icon-tick i {
+    font-size: 13px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    line-height: 24px;
+    border: 2px solid transparent;
+    pointer-events: none;
+}
+
+.icon-tick {
+    color: #69995d;
+    background-color: #bfd4b9;
+    border: #69995D;
+    border-radius: 100%;
+}
+
+.icon-cross {
+    color: red;
+    background-color: rgba(236, 204, 204, 0.986);
+    border: red;
+    border-radius: 100%;
+}
+
+/*Next and Restart button*/
+
+.bottom{
+    height: 60px;
+    width: 530px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next-btn {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #F8E9E9;
+    background: #CBAC88;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.next-btn:hover {
+    background: #F8E9E9;
+    color: #CBAC88;
+}
 
 /*Footer*/
 
