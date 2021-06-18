@@ -120,8 +120,8 @@ h2 {
 #rules-box{
     width: 520px;
     border-radius: 5px;
-    background-color: #69995D; 
-    color: #F8E9E9;
+    background-color: #F8E9E9; 
+    color: #394648;
     display: none;
 }
 
@@ -132,7 +132,7 @@ h2 {
     height: 60px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #F8E9E9;
+    border-bottom: 1px solid #394648;
 
     padding: 0 35px;
 }
@@ -147,7 +147,7 @@ h2 {
 }
 
 .rule span {
-    color: #EDB6A3;
+    color: #69995D;
     font-weight: 500;
 }
 
@@ -187,6 +187,7 @@ h2 {
 button.quit {
     color: #69995d;
     border-color: #69995D;
+    background-color: #F8E9E9;
 }
 
 button.restart {
