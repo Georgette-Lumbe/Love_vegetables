@@ -18,7 +18,7 @@ body {
 /*Header*/
 
 #header {
-    background-color: #69995D;
+    background-color: #F8E9E9;
     height: 70px;
     width: 100%;
 
@@ -30,7 +30,7 @@ body {
 
 #logo {
     margin-left: 20px;
-    font-size: 300%;
+    font-size: 250%;
     float: left;
 }
 
@@ -38,14 +38,15 @@ h1,
 h2 {
     font-family: Mate SC, sans-serif;
     text-transform: uppercase;
-    color: #F8E9E9;
+    color: #394648;
     letter-spacing: 3px;
+    margin-top: 10px;
 }
 
 /*Navigation Links*/
 
 #menu {
-    color: #F8E9E9;
+    color: #394648;
     font-size: 120%;
     font-weight: 200;
     float: right;
@@ -65,18 +66,18 @@ h2 {
 }
 
 #menu a:hover {
-    border-bottom: 2px solid #F8E9E9;
+    border-bottom: 2px solid #394648;
 }
 
 .active {
-    border-bottom: 2px solid #F8E9E9;
+    border-bottom: 2px solid #394648;
 }
 
 /*Main section of Homepage*/
 
 #home-area {
     width: 100%;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -437,8 +438,8 @@ button.restart {
 /*Footer*/
 
 footer {
-    background-color: #69995D;
-    height: 70px;
+    background-color: #F8E9E9;
+    height: 75px;
 }
 
 #social-media {
@@ -453,7 +454,7 @@ footer {
 
 #social-media i {
     font-size: 200%;
-    color: #F8E9E9;
+    color: #394648;
 }
 
 #social-media li {
@@ -462,6 +463,6 @@ footer {
 }
 
 #social-media i:hover {
-    color: #394648;
+    color: #69995D;
     cursor: pointer;
 }
