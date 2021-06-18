@@ -81,7 +81,8 @@ h2 {
 #main-page,
 #rules-box,
 #quiz-box,
-#feedback-box {
+#feedback-box,
+#help-box {
     position: absolute;
     top: 50%;
     left: 50%;
