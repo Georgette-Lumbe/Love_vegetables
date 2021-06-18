@@ -372,8 +372,8 @@ button.restart {
 
 #feedback-box {
     display: none;
-    background: #69995d;
-    color: #F8E9E9;
+    background:#F8E9E9;
+    color: #394648;
     width: 450px;
     padding: 25px 30px;
     border-radius: 5px;
@@ -385,7 +385,7 @@ button.restart {
 
 #feedback-box .icon {
     font-size: 100px;
-    color: #F8E9E9;
+    color: #69995D;
     margin-bottom: 10px;
 }
 
