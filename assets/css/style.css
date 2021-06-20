@@ -96,6 +96,15 @@ h2 {
                 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+/*Make the box appear when the start button is pressed (Help from Youtube Tutorial)*/
+
+.rules-box.activeRule {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 /*Style start quiz button */
 .start-btn {
     font-weight: 500;
@@ -122,7 +131,11 @@ h2 {
     border-radius: 5px;
     background-color: #F8E9E9; 
     color: #394648;
-    display: none;
+
+    /*Hide the rules box (Help from Youtube Tutorials)*/
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .rules-title { 
