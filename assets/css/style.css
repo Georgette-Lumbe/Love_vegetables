@@ -75,17 +75,17 @@ h2 {
 
 /*Main section of Homepage*/
 
-#home-area {
+#home_area {
     width: 100%;
     height: 700px;
     overflow: hidden;
 }
 
-#main-page,
-#rules-box,
-#quiz-box,
-#feedback-box,
-#help-box {
+#main_page,
+#rules_box,
+#quiz_box,
+#feedback_box,
+#help_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,7 +98,7 @@ h2 {
 
 /*Make the box appear when the start button is pressed (Help from Youtube Tutorial)*/
 
-.rules-box.activeRule {
+.rules_box.activeRule {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -106,7 +106,7 @@ h2 {
 }
 
 /*Style start quiz button */
-.start-btn {
+.start_btn {
     font-weight: 500;
     font-size: 25px;
     background-color: #69995D;
@@ -118,7 +118,7 @@ h2 {
     padding: 15px 30px;
 }
 
-.start-btn:hover {
+.start_btn:hover {
     background-color: #F8E9E9;
     color: #69995D;
     
@@ -126,7 +126,7 @@ h2 {
 
 /*Style Instructions box*/
 
-#rules-box{
+#rules_box{
     width: 520px;
     border-radius: 5px;
     background-color: #F8E9E9; 
@@ -138,7 +138,7 @@ h2 {
     transform: translate(-50%, -50%) scale(0.9);
 }
 
-.rules-title { 
+.rules_title { 
     font-size: 30px;
     font-weight: 500;
     width: 450px;
@@ -150,7 +150,7 @@ h2 {
     padding: 0 35px;
 }
 
-.rules-list {
+.rules_list {
     padding: 15px 35px;
 }
 
@@ -211,13 +211,13 @@ button.restart {
 
 /*Main section of Quiz page*/
 
-#quiz-area {
+#quiz_area {
     width: 100%;
     height: 700px;
     overflow: hidden;
 }
 
-#quiz-box {
+#quiz_box {
     width: 600px;
     color: #394648;
     background-color: #F8E9E9;
@@ -227,7 +227,7 @@ button.restart {
     top: 58%;
 }
 
-.quiz-top {
+.quiz_top {
     position: relative;
     z-index: 99;
     height: 70px;
@@ -241,17 +241,17 @@ button.restart {
     border-radius: 5px 5px 0 0;
 }
 
-.total-question span {
+.total_question span {
     display: flex;
     user-select: none;
 }
 
-.total-question span p {
+.total_question span p {
     font-weight: 600;
     padding: 0 5px;
 }
 
-.total-question span p:first-child {
+.total_question span p:first-child {
     padding-left: 0;
 }
 
@@ -267,7 +267,7 @@ button.restart {
     border: 1px solid #69995D;
 }
 
-.time-text {
+.time_text {
     font-weight: 400;
     font-size: 17px;
 
@@ -275,7 +275,7 @@ button.restart {
     user-select: none;
 }
 
-.timer-seconds {
+.timer_seconds {
     font-size: 17px;
     font-weight: 600;
     background: #F8E9E9;
@@ -293,12 +293,12 @@ button.restart {
     background: #F8E9E9;
 }
 
-.questions-text {
+.questions_text {
     font-size: 25px;
     font-weight: 600;
 }
 
-.option-list {
+.option_list {
     display: block;
     padding: 20px 0;
 }
@@ -328,8 +328,8 @@ button.restart {
     margin-bottom: 0;
 }
 
-.icon-cross i,
-.icon-tick i {
+.icon_cross i,
+.icon_tick i {
     font-size: 13px;
     text-align: center;
     width: 27px;
@@ -339,14 +339,14 @@ button.restart {
     pointer-events: none;
 }
 
-.icon-tick {
+.icon_tick {
     color: #69995D;
     background-color: #bfd4b9;
     border: #69995D;
     border-radius: 100%;
 }
 
-.icon-cross {
+.icon_cross {
     color: red;
     background-color: rgba(236, 204, 204, 0.986);
     border: red;
@@ -364,7 +364,7 @@ button.restart {
     justify-content: space-between;
 }
 
-.next-btn {
+.next_btn {
     width: 70px;
     height: 40px;
     padding: 0 13px;
@@ -376,14 +376,14 @@ button.restart {
     border-radius: 5px;
 }
 
-.next-btn:hover {
+.next_btn:hover {
     background: #F8E9E9;
     color: #394648;
 }
 
 /*Feedback-box*/
 
-#feedback-box {
+#feedback_box {
     display: none;
     background:#F8E9E9;
     color: #394648;
@@ -396,48 +396,48 @@ button.restart {
     text-align: center;
 }
 
-#feedback-box .icon {
+#feedback_box .icon {
     font-size: 100px;
     color: #69995D;
     margin-bottom: 10px;
 }
 
-.complete-box {
+.complete_box {
     font-size: 20px;
     font-weight: 600;
 }
 
-.score-text span {
+.score_text span {
     display: flex;
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
 }
 
-.score-text span p {
+.score_text span p {
     font-weight: 600;
     padding: 0 4px;
 }
 
-#feedback-box .buttons {
+#feedback_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-#feedback-box .buttons button {
+#feedback_box .buttons button {
     margin: 0 10px;
     height: 40px;
 }
 
 /*Main section of help page*/
 
-#help-area {
+#help_area {
     width: 100%;
     height: 700px;
     overflow: hidden;
 }
 
-#help-box {
+#help_box {
     width: 600px;
     color: #394648;
     background-color: #F8E9E9;
@@ -455,27 +455,27 @@ footer {
     height: 75px;
 }
 
-#social-media {
+#social_media {
     width: fit-content;
     margin: auto;
 }
 
-#social-media ul {
+#social_media ul {
     display: flex;
     margin-bottom: 10px;
 }
 
-#social-media i {
+#social_media i {
     font-size: 200%;
     color: #394648;
 }
 
-#social-media li {
+#social_media li {
     list-style-type: none;
     padding: 20px;
 }
 
-#social-media i:hover {
+#social_media i:hover {
     color: #69995D;
     cursor: pointer;
 }
