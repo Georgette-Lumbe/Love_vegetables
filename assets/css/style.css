@@ -82,7 +82,7 @@ h2 {
 }
 
 #main_page,
-#rules_box,
+.rules_box,
 #quiz_box,
 #feedback_box,
 #help_box {
@@ -126,7 +126,7 @@ h2 {
 
 /*Style Instructions box*/
 
-#rules_box{
+.rules_box{
     width: 520px;
     border-radius: 5px;
     background-color: #F8E9E9; 
