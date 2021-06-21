@@ -15,3 +15,4 @@ exit_btn.onclick = ()=>{
     rules_box.classList.remove("active_rule"); //hide the instructions box
 }
 
+
