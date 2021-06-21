@@ -1,60 +1,17 @@
+//Getting all required elements
 
-//Creating an array and passing the number, questions, options, and answers
-let questions = [
-    {
-        numb: 1,
-        question: 'Which of these vegetables was the first to be grown in space?',
-        answer: "Potato",
-        option: [
-            "Radish",
-            "Peas",
-            "Swede",
-            "Potato"
-        ]
-    },
-    {
-        numb: 2,
-        question: 'What is the most popular vegetable in the United States?',
-        answer: "Brocoli",
-        option: [
-            "Brussels Sprouts",
-            "Brocoli",
-            "Artichoke",
-            "Zucchini"
-        ]
-    },
-    {
-        numb: 3,
-        question: 'Where did Swiss Chard originate?',
-        answer: "Spain",
-        option: [
-            "Spain",
-            "Switzerland",
-            "Ethiopia",
-            "Norway"
-        ]
-    },
-    {
-        numb: 4,
-        question: 'Which of the following statements about carrots is true?',
-        answer: "None of the above",
-        option: [
-            "They help you see in the dark",
-            "They originated in the United States",
-            "They are made up of 96% water",
-            "None of the above"
-        ]
-    },
-    {
-        numb: 5,
-        question: 'Which of the following vegetables has an aniseed flavour?',
-        answer: "Fennel",
-        option: [
-            "Asparagus",
-            "Pak Choi",
-            "Fennel",
-            "Garlic"
-        ]
-    },
-]
+let start_btn = document.querySelector(".start_btn button");
+let rules_box = document.querySelector(".rules_box");
+let exit_btn = rules_box.querySelector(".buttons .quit");
+let continue_btn = rules_box.querySelector(".buttons .restart");
+
+// If Start Quiz Buttton Clicked
+start_btn.onclick = ()=>{
+    rules_box.classList.add("active_rule"); //show the instructions box
+}
+
+// If Exit Buttton Clicked
+exit_btn.onclick = ()=>{
+    rules_box.classList.remove("active_rule"); //hide the instructions box
+}
 
