@@ -85,7 +85,7 @@ h2 {
 .rules_box,
 .quiz_box,
 #feedback_box,
-#help_box {
+.help_box {
     position: absolute;
     top: 58%;
     left: 50%;
@@ -127,11 +127,12 @@ h2 {
     padding: 15px 30px;
 }
 
-.start_btn:hover {
+.start_btn button:hover{
     background-color: #F8E9E9;
     color: #69995D;
-    
+    border-color: #69995D;
 }
+    
 
 /*Style Instructions box*/
 
@@ -205,6 +206,7 @@ h2 {
 .buttons button:hover {
     color: #394648 ;
     background-color: #EDB6A3;
+    border-color: #69995D;
 }
 
 button.quit {
@@ -454,21 +456,77 @@ button.restart {
 
 #help_area {
     width: 100%;
-    height: 700px;
+    height: 800px;
     overflow: hidden;
 }
 
-#help_box {
+.help_box {
     width: 600px;
+    height: 650px;
     color: #394648;
     background-color: #F8E9E9;
     border-radius: 5px;
     text-align: center;
 
-    /*reverse the top of quiz-box above*/
-    top: 58%;
+    /*Correct the code above*/
+    top: 66%;
 }
 
+.link span {
+    color: #69995D;
+}
+
+/*Style the form*/
+
+input[type=text],
+input[type=email] {
+    height: 30px;
+    border: 2px solid #69995D; 
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/*Complete overside the code above*/
+input[type=email] {
+    margin-left: 30px;
+}
+
+textarea {
+    font-family: Montserrat, sans-serif;
+    border: 2px solid #69995D; 
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 90px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #69995D;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.send_button {
+    color: #F8E9E9;
+    background-color: #69995D;
+}
+
+.send_button:hover,
+.clear_button:hover {
+    color: #394648 ;
+    background-color: #EDB6A3;
+    border-color: #69995D;
+}
+
+.clear_button {
+    color: #69995D;
+    background-color: #F8E9E9;
+}
+    
 /*Footer*/
 
 footer {
