@@ -61,12 +61,20 @@ function displayQuestions(index){
     }
 }
 
+//Getting user answers
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
-    console.log(userAnswer);
+    let correctAnswer = questions[que_count].answer;
+    if(userAnswer == correctAnswer){
+        answer.classList.add('correct')
+        console.log('Good Answer');
+    } else {
+        answer.classList.add('incorrect')
+        console.log('Wrong Answer');
+    }
 }
 
-//Set the total questions
+//Setting total questions
 function queCounter(index) {
     const questions_counter = quiz_box.querySelector('.total_question');
     let totalQuestionTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>'
