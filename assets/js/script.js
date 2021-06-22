@@ -35,6 +35,7 @@ let que_numb = 1;
 let counter;
 let timeValue = 20;
 let widthValue = 0;
+let userScore = 0;
 
 const next_btn = quiz_box.querySelector('.next_btn');
 const feedback_box = document.querySelector('.feedback_box');
@@ -88,6 +89,8 @@ function optionSelected(answer) {
     let correctAnswer = questions[que_count].answer;
     let allOptions = option_list.children.length;
     if(userAnswer == correctAnswer){
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add('correct')
         console.log('Good Answer');
         answer.insertAdjacentHTML('beforeend', tickIcon); //Tick Icon when answer is right(help from YouTube Tutorial)
@@ -109,7 +112,23 @@ function displayFeedbackBox() {
     rules_box.classList.remove('activeInfo'); //hide the info box
     quiz_box.classList.remove('activeQuiz'); //hide the quiz box
     feedback_box.classList.add('activeFeedback'); // show the feedback box
-
+    const scoreText = feedback_box.querySelector('.score_text');
+    if(userScore > 3) {
+        let scoreTag = '<span>and congratulations! You got <p>'+ userScore  +'</p> out of <p>' +  questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if (userScore > 1) {
+        let scoreTag = '<span>and nice! You got <p>'+ userScore  +'</p> out of <p>' +  questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if (userScore == 1) {
+        let scoreTag = '<span>and sorry! You got only <p>'+ userScore  +'</p> out of <p>' +  questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else {
+        let scoreTag = '<span>and really sorry! You failed the quiz</span>';
+        scoreText.innerHTML = scoreTag;
+    }
 }
 
 //Setting total questions
@@ -136,7 +155,7 @@ function startTimer(time){
     }
 }
 
-//Setting Time Line
+//Setting Time Line (help from Youtube Tutorial)
 function startTimerLine(time){
     counterLine = setInterval(timer, 35);
     function timer () {
