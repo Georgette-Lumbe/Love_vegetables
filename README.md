@@ -46,7 +46,7 @@ Responsiveness images
 9. [Acknowledgements](#acknowledgements "Goto acknowledgements")
 ---
 
-# Introduction
+# INTRODUCTION
 
 Love Vegetables is a fun interactive website that involves the user in a vegetables knowledge quiz. It is a timed multiple choice game, with random questions each time the user starts the quiz.  The user can see the instructions on the quiz, before starting and after finishing the quiz, the user can see their score and have the option to replay. 
 
@@ -169,8 +169,8 @@ The structure of the application has been designed to provide a simple and seaml
 
 4. Quiz
 
-    * A counter to show what question you are on
-    * A counter that shows you how much time you have left
+    * A counter to show what question the user is on
+    * A counter that shows the user how much time he has left
     * Questions
     * Four answers buttons of which onli one is correct
     * Two buttons:
@@ -246,7 +246,7 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
 
     * These colours are used in a specific and complementary way, maintaining a good level of contrast.
 
-    <img src="assets/docs/screenshots/colours.PNG" width="100%">
+<img src="assets/docs/screenshots/colours.PNG" width="100%">
 
 3. Images and Icons
 
@@ -254,5 +254,85 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
 
     * Several icons have been used in the site. [Font Awesome](https://fontawesome.com/) was the main source of icons.
 
+# FEATURES
 
+## Existing and Design features
 
+### HOME PAGE
+
+1. Header Logo & Navigation Bar
+
+    * The site has a consistent responsive navigation system that is found on every page and allows user to navigate easily from page to page without complications.
+
+    * The header contains a conventionally placed logo at the top left of the page (redirects the user to the home page in one click) and a navigation bar at the top right of the page.
+
+    * The header is fixed so the user can see it if he goes to the bottom of the page.
+
+<img src="" width="100%" height="25%">
+
+2. Landing page 
+
+    * The landing includes an image as a background with a question overlaid and a button to start the quiz, this button allows the user to accss the quiz.
+
+<img src="" width="100%" height="50%">
+
+3. Instructions section
+
+    * This section allows the user to view the quiz instructions before starting to play.
+    * It also allows the user to either exit or continue the quiz.
+    * It is represented by a box of text (instructions) with the same background as the landing page.
+    * In fact, this section is hidden and to see it, just click on the start quiz button in the landing page.
+
+<img src="" width="100%" height="50%">    
+
+4. Quiz section
+
+    * This section allows the user to view :
+        - The quiz and start playing.
+        - A counter that show what question user is on
+        - A counter that shows the user how much time he has left
+        - Questions
+        - Four answers buttons of which only one is correct
+
+    * It also allows the user to either move on to another question or restart the quiz.
+    * It is represented by a box of text (quiz) with the same background as the landing page.
+    * In fact, this section is hidden and to see it, just click on the continue button on the bottom right in the instructions box.
+
+<img src="" width="100%" height="50%"> 
+
+5. Feedback section
+
+    * In this section, the user will have the feedback on his quiz. He will be able to see his score and make the choice to eitheir restart the quiz or exit the quiz. 
+    * It is represented by a box of text (feedback) with the same background as the landing page.
+    * In fact, this section is hidden and to see it, just finish the quiz.
+
+<img src="" width="100%" height="50%">
+
+6. Help page
+
+    * This page allows the user to see how to play and to submit questions to the creator.
+    * It is represented by a box of text and contact form with the same background as the landing page.
+
+<img src="" width="100%" height="50%">
+
+7. Submit section 
+
+    * A thank you message will be addressed to the user after sending his question.
+
+<img src="" width="100%" height="50%">
+
+8. Footer
+
+    * This section provides the links to the main Love Vegetables social pages with a light background color, just click on the icon to be redirected to the platform of the centre of your choice. 
+
+    * This section is on every page of the site and allows customers to stay connected with the Love Gegetables community.
+
+<img src="" width="100%" height="50%">
+
+## Features to implement in the future
+
+1. Difficulty mode
+2. Dark mode
+3. Implement the progressive Web Application (PWA) to allow users to install the application on their own devices.
+
+For the three features to be implemented in the future above, the web developer needs more knowledge on this subject.
