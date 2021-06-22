@@ -6,6 +6,7 @@ const exit_btn = rules_box.querySelector(".buttons .quit");
 const continue_btn = rules_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector('.option_list');
+const timeCount = document.querySelector('.timer_seconds');
 
 // If Start Quiz Buttton clicked
 start_btn.onclick = ()=>{
@@ -24,11 +25,13 @@ continue_btn.onclick = ()=>{
 
     displayQuestions(0);
     queCounter(1);
-
+    startTimer(20);
 }
 
 let que_count = 0;
 let que_numb = 1;
+let counter;
+let timeValue = 20;
 
 const next_btn = quiz_box.querySelector('.next_btn');
 
@@ -38,7 +41,9 @@ next_btn.onclick = ()=> {
         que_count++;
         que_numb++;
         displayQuestions(que_count);
-        queCounter(que_numb)
+        queCounter(que_numb);
+        clearInterval(counter);
+        startTimer(timeValue);
     } else {
         console.log("Completed");
     }
@@ -61,6 +66,7 @@ function displayQuestions(index){
     }
 }
 
+//Getting tick and cross Icons
 let tickIcon = '<div class="icon_tick"><i class="fas fa-check"></i></div>';
 let crossIcon = '<div class="icon_cross"><i class="fas fa-times"></i></div>';
 
@@ -72,11 +78,11 @@ function optionSelected(answer) {
     if(userAnswer == correctAnswer){
         answer.classList.add('correct')
         console.log('Good Answer');
-        answer.insertAdjacentHTML('beforeend', tickIcon); //help from YouTube Tutorial
+        answer.insertAdjacentHTML('beforeend', tickIcon); //Tick Icon when answer is right(help from YouTube Tutorial)
     } else {
         answer.classList.add('incorrect')
         console.log('Wrong Answer');
-        answer.insertAdjacentHTML('beforeend', crossIcon);
+        answer.insertAdjacentHTML('beforeend', crossIcon); //Cross Icon when answer is wrong
     }
 
     //Disable all other options when user selects one option
@@ -90,4 +96,13 @@ function queCounter(index) {
     const questions_counter = quiz_box.querySelector('.total_question');
     let totalQuestionTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>'
     questions_counter.innerHTML = totalQuestionTag;
+}
+
+//Setting Time left 
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer () {
+        timeCount.textContent = time;
+        time--;
+    }
 }
