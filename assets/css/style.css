@@ -88,7 +88,7 @@ h2 {
 #feedback_box,
 #help_box {
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -108,7 +108,7 @@ h2 {
 }
 
 /*Style start quiz button */
-.start_btn {
+.start_btn button{
     font-weight: 500;
     font-size: 25px;
     background-color: #69995D;
@@ -219,9 +219,7 @@ button.restart {
     color: #394648;
     background-color: #F8E9E9;
     border-radius: 5px;
-
-    /*reverse the top of quiz-box above*/
-    top: 58%;
+    
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
@@ -363,6 +361,10 @@ button.restart {
     color: red;
     background-color: rgba(236, 204, 204, 0.986);
     border-color: red;
+}
+
+.option_list .option.disabled {
+    pointer-events: none;
 }
 
 /*Next and Restart button*/
