@@ -20,11 +20,14 @@ exit_btn.onclick = ()=>{
 continue_btn.onclick = ()=>{
     rules_box.classList.remove("activeRule"); //hide the instructions box
     quiz_box.classList.add("activeQuiz"); //show the quiz box
-    showQuestions(0);
+
+    displayQuestions(0);
+    queCounter(1);
 
 }
 
 let que_count = 0;
+let que_numb = 1;
 
 const next_btn = quiz_box.querySelector('.next_btn');
 
@@ -32,14 +35,16 @@ const next_btn = quiz_box.querySelector('.next_btn');
 next_btn.onclick = ()=> {
     if(que_count < questions.length -1){
         que_count++;
-        showQuestions(que_count);
+        que_numb++;
+        displayQuestions(que_count);
+        queCounter(que_numb)
     } else {
         console.log("Completed");
     }
 }
 
 //Getting questions and options from array
-function showQuestions(index){
+function displayQuestions(index){
     const questions_text = document.querySelector('.questions_text');
     const option_list = document.querySelector('.option_list');
     let que_tag = '<span>'+ questions[index].numb + '. ' + questions[index].question +'</span>';
@@ -49,4 +54,21 @@ function showQuestions(index){
                      + '<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     questions_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
+
+    const option = option_list.querySelectorAll('.option');
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute('onclick', 'optionSelected(this)')
+    }
+}
+
+function optionSelected(answer) {
+    let userAnswer = answer.textContent;
+    console.log(userAnswer);
+}
+
+//Set the total questions
+function queCounter(index) {
+    const questions_counter = quiz_box.querySelector('.total_question');
+    let totalQuestionTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>'
+    questions_counter.innerHTML = totalQuestionTag;
 }
