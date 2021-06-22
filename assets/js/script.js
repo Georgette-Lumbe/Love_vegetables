@@ -8,6 +8,7 @@ const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector('.option_list');
 const timeCount = document.querySelector('.timer_seconds');
 const timeLine = document.querySelector('.time_line');
+const timeOff = document.querySelector('.time_text');
 
 // If Start Quiz Buttton clicked
 start_btn.onclick = ()=>{
@@ -58,6 +59,7 @@ restart_quiz.onclick = ()=> {
     clearInterval(counterLine);
     startTimerLine(widthValue);
     next_btn.style.display = 'none';
+    timeOff.textContent = "Time Left";
 }
 
 // If the quit quiz button is clicked
@@ -77,7 +79,11 @@ next_btn.onclick = ()=> {
         clearInterval(counterLine);
         startTimerLine(widthValue);
         next_btn.style.display = 'none';
+        timeOff.textContent = "Time Left";
     } else {
+        clearInterval(counter);
+        startTimer(timeValue);
+        clearInterval(counterLine);
         console.log("Completed");
         displayFeedbackBox();
     }
@@ -174,6 +180,7 @@ function startTimer(time){
         if (time < 0){
             clearInterval(counter);
             timeCount.textContent = '0';
+            timeOff.textContent = "Time Off";
 
             //Disable all options when time left and display the next button
             let allOptions = option_list.children.length;
