@@ -37,6 +37,9 @@ let timeValue = 20;
 let widthValue = 0;
 
 const next_btn = quiz_box.querySelector('.next_btn');
+const feedback_box = document.querySelector('.feedback_box');
+const restart_quiz = feedback_box.querySelector('.restart');
+const quit_quiz = feedback_box.querySelector('.quit');
 
 //If Next Button clicked
 next_btn.onclick = ()=> {
@@ -52,6 +55,7 @@ next_btn.onclick = ()=> {
         next_btn.style.display = 'none';
     } else {
         console.log("Completed");
+        displayFeedbackBox();
     }
 }
 
@@ -98,6 +102,14 @@ function optionSelected(answer) {
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = 'block';
+}
+
+//Getting the feedback box
+function displayFeedbackBox() {
+    rules_box.classList.remove('activeInfo'); //hide the info box
+    quiz_box.classList.remove('activeQuiz'); //hide the quiz box
+    feedback_box.classList.add('activeFeedback'); // show the feedback box
+
 }
 
 //Setting total questions

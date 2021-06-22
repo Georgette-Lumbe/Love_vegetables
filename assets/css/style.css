@@ -84,7 +84,7 @@ h2 {
 .start_btn,
 .rules_box,
 .quiz_box,
-#feedback_box,
+.feedback_box,
 .help_box {
     position: absolute;
     top: 58%;
@@ -99,7 +99,8 @@ h2 {
 /*Make the box appear when the start button is pressed (Help from Youtube Tutorial)*/
 
 .rules_box.activeRule,
-.quiz_box.activeQuiz {
+.quiz_box.activeQuiz,
+.feedback_box.activeFeedback {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -408,8 +409,7 @@ button.restart {
 
 /*Feedback-box*/
 
-#feedback_box {
-    display: none;
+.feedback_box {
     background:#F8E9E9;
     color: #394648;
     width: 450px;
@@ -419,9 +419,13 @@ button.restart {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
-#feedback_box .icon {
+.feedback_box .icon {
     font-size: 100px;
     color: #69995D;
     margin-bottom: 10px;
@@ -444,12 +448,12 @@ button.restart {
     padding: 0 4px;
 }
 
-#feedback_box .buttons {
+.feedback_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-#feedback_box .buttons button {
+.feedback_box .buttons button {
     margin: 0 10px;
     height: 40px;
 }
