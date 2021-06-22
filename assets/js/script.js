@@ -61,6 +61,9 @@ function displayQuestions(index){
     }
 }
 
+let tickIcon = '<div class="icon_tick"><i class="fas fa-check"></i></div>';
+let crossIcon = '<div class="icon_cross"><i class="fas fa-times"></i></div>';
+
 //Getting user answers
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
@@ -69,12 +72,14 @@ function optionSelected(answer) {
     if(userAnswer == correctAnswer){
         answer.classList.add('correct')
         console.log('Good Answer');
+        answer.insertAdjacentHTML('beforeend', tickIcon); //help from YouTube Tutorial
     } else {
         answer.classList.add('incorrect')
         console.log('Wrong Answer');
+        answer.insertAdjacentHTML('beforeend', crossIcon);
     }
 
-    //Once user selected disabled all options
+    //Disable all other options when user selects one option
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }

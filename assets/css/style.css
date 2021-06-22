@@ -348,16 +348,10 @@ button.restart {
 
 .icon_tick {
     color: #69995D;
-    background-color: #bfd4b9;
-    border-color: #69995D;
-    border-radius: 100%;
 }
 
 .icon_cross {
     color: red;
-    background-color: rgba(236, 204, 204, 0.986);
-    border-color: red;
-    border-radius: 100%;
 }
 
 .option.correct {
