@@ -51,7 +51,6 @@ restart_quiz.onclick = ()=> {
     let que_numb = 1;
     let timeValue = 20;
     let widthValue = 0;
-    let userScore = 0;
     displayQuestions(que_count);
     queCounter(que_numb);
     clearInterval(counter);
@@ -175,6 +174,14 @@ function startTimer(time){
         if (time < 0){
             clearInterval(counter);
             timeCount.textContent = '0';
+
+            //Disable all options when time left and display the next button
+            let allOptions = option_list.children.length;
+
+            for (let i = 0; i < allOptions; i++) {
+                option_list.children[i].classList.add("disabled");
+            }
+            next_btn.style.display = 'block';
         }
     }
 }
