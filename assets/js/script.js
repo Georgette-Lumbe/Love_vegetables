@@ -7,6 +7,7 @@ const continue_btn = rules_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector('.option_list');
 const timeCount = document.querySelector('.timer_seconds');
+const timeLine = document.querySelector('.time_line');
 
 // If Start Quiz Buttton clicked
 start_btn.onclick = ()=>{
@@ -26,12 +27,14 @@ continue_btn.onclick = ()=>{
     displayQuestions(0);
     queCounter(1);
     startTimer(20);
+    startTimerLine(0);
 }
 
 let que_count = 0;
 let que_numb = 1;
 let counter;
 let timeValue = 20;
+let widthValue = 0;
 
 const next_btn = quiz_box.querySelector('.next_btn');
 
@@ -44,6 +47,8 @@ next_btn.onclick = ()=> {
         queCounter(que_numb);
         clearInterval(counter);
         startTimer(timeValue);
+        clearInterval(counterLine);
+        startTimerLine(widthValue);
     } else {
         console.log("Completed");
     }
@@ -72,6 +77,8 @@ let crossIcon = '<div class="icon_cross"><i class="fas fa-times"></i></div>';
 
 //Getting user answers
 function optionSelected(answer) {
+    clearInterval(counter);
+    clearInterval(counterLine);
     let userAnswer = answer.textContent;
     let correctAnswer = questions[que_count].answer;
     let allOptions = option_list.children.length;
@@ -98,11 +105,31 @@ function queCounter(index) {
     questions_counter.innerHTML = totalQuestionTag;
 }
 
-//Setting Time left 
+//Setting Time Counter
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer () {
         timeCount.textContent = time;
         time--;
+        if(time < 9){
+            let addZero = timeCount.textContent;
+            timeCount.textContent = '0' + addZero; 
+        }
+        if (time < 0){
+            clearInterval(counter);
+            timeCount.textContent = '0';
+        }
+    }
+}
+
+//Setting Time Counter
+function startTimerLine(time){
+    counterLine = setInterval(timer, 35);
+    function timer () {
+        time += 1;
+        timeLine.style.width = time + 'px';
+        if (time > 598){
+            clearInterval(counterLine);
+        }
     }
 }

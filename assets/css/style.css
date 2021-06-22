@@ -239,7 +239,6 @@ button.restart {
     z-index: 99;
     height: 70px;
     padding: 0 30px;
-    border-bottom: 2px solid #394648;
     display: flex;
     align-items: center;
 
@@ -293,6 +292,14 @@ button.restart {
     border-radius: 5px;
     text-align: center;
     border: 1px solid #69995D;
+}
+
+.time_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #394648;
 }
 
 .quiz_questions {
