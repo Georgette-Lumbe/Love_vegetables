@@ -65,12 +65,18 @@ function displayQuestions(index){
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[que_count].answer;
+    let allOptions = option_list.children.length;
     if(userAnswer == correctAnswer){
         answer.classList.add('correct')
         console.log('Good Answer');
     } else {
         answer.classList.add('incorrect')
         console.log('Wrong Answer');
+    }
+
+    //Once user selected disabled all options
+    for (let i = 0; i < allOptions; i++) {
+        option_list.children[i].classList.add("disabled");
     }
 }
 
