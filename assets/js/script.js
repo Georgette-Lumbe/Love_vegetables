@@ -33,6 +33,7 @@ continue_btn.onclick = ()=>{
 let que_count = 0;
 let que_numb = 1;
 let counter;
+let counterLine;
 let timeValue = 20;
 let widthValue = 0;
 let userScore = 0;
@@ -41,6 +42,29 @@ const next_btn = quiz_box.querySelector('.next_btn');
 const feedback_box = document.querySelector('.feedback_box');
 const restart_quiz = feedback_box.querySelector('.restart');
 const quit_quiz = feedback_box.querySelector('.quit');
+
+//If the replay quiz button is clicked
+restart_quiz.onclick = ()=> {
+    quiz_box.classList.add('activeQuiz');
+    feedback_box.classList.remove('activeFeedback');
+    let que_count = 0;
+    let que_numb = 1;
+    let timeValue = 20;
+    let widthValue = 0;
+    let userScore = 0;
+    displayQuestions(que_count);
+    queCounter(que_numb);
+    clearInterval(counter);
+    startTimer(timeValue);
+    clearInterval(counterLine);
+    startTimerLine(widthValue);
+    next_btn.style.display = 'none';
+}
+
+// If the quit quiz button is clicked
+quit_quiz.onclick = ()=> {
+    window.location.reload();
+}
 
 //If Next Button clicked
 next_btn.onclick = ()=> {
