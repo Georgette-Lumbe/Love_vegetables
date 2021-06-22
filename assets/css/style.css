@@ -389,6 +389,7 @@ button.restart {
 }
 
 .next_btn {
+    display: none;
     width: 70px;
     height: 40px;
     padding: 0 13px;

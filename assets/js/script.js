@@ -49,6 +49,7 @@ next_btn.onclick = ()=> {
         startTimer(timeValue);
         clearInterval(counterLine);
         startTimerLine(widthValue);
+        next_btn.style.display = 'none';
     } else {
         console.log("Completed");
     }
@@ -96,6 +97,7 @@ function optionSelected(answer) {
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
+    next_btn.style.display = 'block';
 }
 
 //Setting total questions
@@ -122,7 +124,7 @@ function startTimer(time){
     }
 }
 
-//Setting Time Counter
+//Setting Time Line
 function startTimerLine(time){
     counterLine = setInterval(timer, 35);
     function timer () {
