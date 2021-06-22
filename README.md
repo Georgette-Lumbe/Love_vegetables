@@ -246,6 +246,8 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
 
     * These colours are used in a specific and complementary way, maintaining a good level of contrast.
 
+    <img src="assets/docs/screenshots/colours.PNG" width="100%">
+
 3. Images and Icons
 
     * A single authentic and aesthetic image has been used on all pages as a background. This image is eye-catching and visually represents the theme of the website. This image was taken from[Pexels](https://www.pexels.com/).
