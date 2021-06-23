@@ -77,7 +77,7 @@ This is the second of five Milestone Projects that the developer must complete d
 * I would like to be able to ask for help 
 * I would like to easily navigate through the Love Vegetables' social media links to be familiar with the Love Vegetables community
 
-### As an old/returning user:
+### As an returning user:
 
 * I would like to navigate easily to the online quiz
 * I would like to see new questions
