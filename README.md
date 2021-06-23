@@ -349,7 +349,7 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
 
 # Testing
 
-Testing information can be found in a separate [testing file]().
+Testing information can be found in a separate [testing file](https://github.com/Georgette-Lumbe/Love_vegetables/blob/master/TESTING.md).
 
 # Issues and Bugs
 
