@@ -156,7 +156,7 @@ h2 {
     height: 60px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #394648;
+    border-bottom: 1px solid gray;
 
     padding: 0 35px;
 }
@@ -179,7 +179,7 @@ h2 {
     display: flex;
     height: 60px;
     padding: 0 35px;
-    border-top: 1px solid #F8E9E9;;
+    border-top: 1px solid gray;
     align-items: center;
 
     /*help from youtube tutorial*/
@@ -235,6 +235,26 @@ button.restart {
     transform: translate(-50%, -50%) scale(0.9);
 }
 
+.quiz_icons {
+    display: flex;
+    font-size: 20px;
+    color: #394648;
+    float: right;
+    margin: 10px;
+}
+
+.leave {
+    padding-left: 10px;
+
+    /*Replace the code above*/
+    font-size: 22px;
+}
+
+.quiz_icons i:hover {
+    color: #69995D;
+    cursor: pointer;
+}
+
 .quiz_top {
     position: relative;
     z-index: 99;
@@ -270,7 +290,7 @@ button.restart {
     height: 45px;
     border-radius: 5px;
     padding: 0 8px;
-    background: #CBAC88;
+    background:#F8E9E9;
     border: 1px solid #69995D;
 }
 
@@ -285,7 +305,7 @@ button.restart {
 .timer_seconds {
     font-size: 17px;
     font-weight: 600;
-    background: #F8E9E9;
+    background: #CBAC88 ;
     color: #394648;
     height: 30px;
     width: 45px;
@@ -378,13 +398,13 @@ button.restart {
     pointer-events: none;
 }
 
-/*Next and Restart button*/
+/*Next button*/
 
 .bottom {
-    height: 60px;
-    width: 530px;
-    padding: 0 30px;
     display: flex;
+    height: 60px;
+    padding: 0 35px;
+    border-top: 1px solid gray;
     align-items: center;
     justify-content: space-between;
 }
@@ -402,8 +422,9 @@ button.restart {
     border-radius: 5px;
 }
 
-.next_btn:hover {
-    background: #F8E9E9;
+.bottom .next_btn:hover {
+    background: #CBAC88;
+    border-color: #69995D;;
     color: #394648;
 }
 
