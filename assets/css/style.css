@@ -452,7 +452,7 @@ button.restart {
     margin-bottom: 10px;
 }
 
-.complete_box {
+.complete_text {
     font-size: 20px;
     font-weight: 600;
 }
@@ -462,6 +462,7 @@ button.restart {
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
+    padding-left: 80px;
 }
 
 .score_text span p {
@@ -471,11 +472,13 @@ button.restart {
 
 .feedback_box .buttons {
     display: flex;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
+    padding-top: 10px;
+    flex-direction: inherit;
 }
 
 .feedback_box .buttons button {
-    margin: 0 10px;
+    margin-bottom: 2px;
     height: 40px;
 }
 
@@ -499,7 +502,7 @@ button.restart {
     top: 66%;
 }
 
-.link span {
+.link {
     color: #69995D;
 }
 
