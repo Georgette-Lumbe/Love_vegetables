@@ -74,3 +74,156 @@
 * I would like to see new questions
 
     - Questions are randomly so the user will find some new questions.
+
+# Manual Testing
+
+## Common Elements Testing
+
+Manual testing was directed on the following elements that appear on every box and page:
+
+* Hovering over the Navbar and the logo will trigger hover effect, confirming the link.
+
+![]()
+
+* Hovering over social media links will be trigger hover effect and clicking on them will open a new tab.
+
+![]()
+
+Facebook
+
+![]()
+
+Instagram
+
+![]()
+
+Youtube
+
+![]()
+
+## Home Page
+
+* Manual testing for the Home page with start quiz button:
+
+![]()
+
+* The responsiveness of the Home Page
+
+![]()
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+
+## Instructions Box
+
+Manual testing for the instructions box when the start quiz button is clicked:
+
+![]()
+
+The responsiveness of the instructions box
+
+![]()
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+## Quiz Box
+
+Manual testing for the quiz box when the continue button is clicked on the instructions box:
+
+![]()
+
+The responsiveness of the quiz box
+
+![]()
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+## Feedback Box
+
+Manual testing for the Feedback box when the user finish the quiz :
+
+![]()
+
+The responsiveness of the feedback box
+
+![]()
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+## Help Page
+
+Manual testing for the Help page:
+
+![]()
+
+The responsiveness of the help page 
+
+![]()
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+Once you fill the form, it will bring you to the thank you page:
+
+- Desktop 
+
+![]()
+
+- Tablet
+
+![]()
+
+- Phone
+
+![]()
+
+
