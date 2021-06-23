@@ -421,3 +421,29 @@ These are steps to run this project within a local IDE:
 6. Change the current working directory to the location where you want the cloned directory to be made
 7. Type *git clone*, and then paste the URL you copied in the step 4
 8. Press Enter. Your local clone will be created.
+
+# Credits
+
+## Content 
+* The questions and answers for the Love Vegetables quiz are sourced from [Ultimate Vegetable Quiz Questions](https://www.ultimatequizquestions.com/vegetable-quiz-questions/).
+
+## Media
+* The developer used only one image for the background which is sourced from [Pexels](https://www.pexels.com/).
+
+## Code 
+* The developer has consulted some websites and tutorials in order to better understand and use the code for this site. Beloow are the sites and tutorials used:
+
+    * [Stack Overflow](https://stackoverflow.com/)
+    * [W3Schools](https://www.w3schools.com/)
+    * [Youtube](https://www.youtube.com/)
+
+        Tutorials:
+        - [Coding Nepal](https://www.youtube.com/channel/UCk7xIEmd3MeyhIu2StLX5yA)
+        - [D Greenwood](https://www.youtube.com/watch?v=ykszkgydoG4)
+        - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1415s)
+
+    # Acknowledgements
+
+    * I would like to thank my mentor, Seun and my tutor Kasia for their helpfulness, constructive advice, feedback and guidance.
+    I would like to thank my family and my boyfriend Jimmy for all the support during this project.
+    * I would like to thank my colleagues of Code Institute and Slack Community for sharing their posts and experience.
