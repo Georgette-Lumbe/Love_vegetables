@@ -245,12 +245,13 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
     * The colours used throughout the site for its main styling are shown below, this mix of colours comes from [coolors](https://coolors.co/) and they have been picked to keep within the design brief of maintaining a simplified pleasure.
 
     * These colours are used in a specific and complementary way, maintaining a good level of contrast.
+    * There is a layer of red for when the user will choose a wrong answer.
 
 <img src="assets/docs/screenshots/colours.PNG" width="100%">
 
 3. Images and Icons
 
-    * A single authentic and aesthetic image has been used on all pages as a background. This image is eye-catching and visually represents the theme of the website. This image was taken from[Pexels](https://www.pexels.com/).
+    * A single authentic and aesthetic image has been used on all pages as a background. This image is eye-catching and visually represents the theme of the website. This image was taken from [Pexels](https://www.pexels.com/).
 
     * Several icons have been used in the site. [Font Awesome](https://fontawesome.com/) was the main source of icons.
 
@@ -331,8 +332,47 @@ Wireframes moch-up were created in a balsamiq workspace with providing a respons
 
 ## Features to implement in the future
 
-1. Difficulty mode
-2. Dark mode
-3. Implement the progressive Web Application (PWA) to allow users to install the application on their own devices.
+1. Pause opption
 
-For the three features to be implemented in the future above, the web developer needs more knowledge on this subject.
+    * Features: add a pause option in the quiz box to allow the user to pause the quiz whenever he wants.
+    * Reason for not featuring in this release: since, there is a time counter, the developer decided better not to put the pause option, since by setting this option the time counter will not be of any importance. But in the future, the developer will put this option and each time the user will press pause, the question he paused will automatically change when he will resume the quiz.
+
+2. Info icon
+
+    * Features: add an info icon in the quiz, near refresh and exit icons, to allow the user to review the instructions whenever he wants.
+    * Reason for not featuring in this release: following the presence of the time counter, the info icon can delay the user in his quiz when he will press this to review the instructions. But in the future, the developer will put this option and each time the user will press info icon, the question will automatically change when he will exit the instructions box.
+
+3. Implement the progressive Web Application (PWA)
+
+    * Features: implement the PWA to allow users to install the application on their own devices.
+    * Reason for not featuring in this release: the web developer needs more knowledge on this subject.
+
+# Testing
+
+Testing information can be found in a separate [testing file]().
+
+# Issues and Bugs
+
+The developper met some issues durieng the development of the website, below are the issues, bugs and solutions that the devloper has encountered:
+
+
+# Technologies used
+
+## Main Languages Used
+
+1. [HTML5](https://fr.wikipedia.org/wiki/HTML5)
+2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+## Libraries, Frameworks and Programs Used
+
+1. [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQjwna2FBhDPARIsACAEc_XbjAS__pJWBfq4NdpfXxxOVWlh4qsEro7gWthlg3GopXgZgB5PkeQaAiu-EALw_wcB) was used to create the wireframe during the design and reflective phase of the project.
+2. [Google fonts](https://fonts.google.com/) was used to import the fonts “Mate SC” and “Montserrat” into the style.css file. These fonts were used all over the project.
+3. [Fonts awesome](https://fontawesome.com/) was used on all pages throughout the website to import icons for the user experience purposes for example social media links, question mark, crown, refresh and exit buttons .
+4. [Git](https://git-scm.com/) was used for version control by using the GitPod terminal to commit to Git and push to GitHub.
+5. [GitHub](https://github.com/) was used to store the project after pushing.
+6. [Am I Responsive?](http://ami.responsivedesign.is/#) was used to view the responsive design throughout the process and to generate image mock-ups for use.
+7. [Coolors](https://coolors.co/) was used for colour inspiration and pallet
+8. [Favicon](https://favicon.io/) was used to generate a favicon for the Love Vegetables.
+9. 
+
