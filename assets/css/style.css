@@ -258,14 +258,15 @@ button.restart {
 .quiz_top {
     position: relative;
     z-index: 99;
-    height: 70px;
+    height: 60px;
     padding: 0 30px;
     display: flex;
     align-items: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.19);
 
     /*Help from Youtube tutorials*/
     justify-content: space-between;
-    border-radius: 5px 5px 0 0;
 }
 
 .total_question span {
@@ -291,7 +292,6 @@ button.restart {
     border-radius: 5px;
     padding: 0 8px;
     background:#F8E9E9;
-    border: 1px solid #69995D;
 }
 
 .time_text {
@@ -559,6 +559,7 @@ input[type=submit] {
 footer {
     background-color: #F8E9E9;
     height: 75px;
+    width: 100%;
 }
 
 #social_media {

@@ -43,8 +43,8 @@ const next_btn = quiz_box.querySelector('.next_btn');
 const feedback_box = document.querySelector('.feedback_box');
 const restart_quiz = feedback_box.querySelector('.restart');
 const quit_quiz = feedback_box.querySelector('.quit');
-const leave_icon = quiz_box.querySelector('.leave');
-const refresh_icon = quiz_box.querySelector('.refresh');
+const leave_icon = document.querySelector('.leave');
+const refresh_icon = document.querySelector('.refresh');
 
 //If the replay quiz button is clicked
 restart_quiz.onclick = ()=> {
