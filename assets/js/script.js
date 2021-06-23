@@ -43,6 +43,8 @@ const next_btn = quiz_box.querySelector('.next_btn');
 const feedback_box = document.querySelector('.feedback_box');
 const restart_quiz = feedback_box.querySelector('.restart');
 const quit_quiz = feedback_box.querySelector('.quit');
+const leave_icon = quiz_box.querySelector('.leave');
+const refresh_icon = quiz_box.querySelector('.refresh');
 
 //If the replay quiz button is clicked
 restart_quiz.onclick = ()=> {
@@ -62,8 +64,29 @@ restart_quiz.onclick = ()=> {
     timeOff.textContent = "Time Left";
 }
 
+//If the replay quiz button is clicked
+refresh_icon.onclick = ()=> {
+    quiz_box.classList.add('activeQuiz');
+    let que_count = 0;
+    let que_numb = 1;
+    let timeValue = 20;
+    let widthValue = 0;
+    displayQuestions(que_count);
+    queCounter(que_numb);
+    clearInterval(counter);
+    startTimer(timeValue);
+    clearInterval(counterLine);
+    startTimerLine(widthValue);
+    next_btn.style.display = 'none';
+    timeOff.textContent = "Time Left";
+}
 // If the quit quiz button is clicked
 quit_quiz.onclick = ()=> {
+    window.location.reload();
+}
+
+// If the leave Icon is clicked
+leave_icon.onclick = ()=> {
     window.location.reload();
 }
 
