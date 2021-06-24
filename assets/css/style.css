@@ -28,10 +28,10 @@ body {
     z-index: 2000;
 }
 
-#logo {
-    margin-left: 20px;
-    font-size: 250%;
-    float: left;
+nav {
+    color: #394648;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1,
@@ -43,41 +43,72 @@ h2 {
     margin-top: 10px;
 }
 
-/*Navigation Links*/
-
-#menu {
-    color: #F8E9E9;
-    font-size: 120%;
-    font-weight: 200;
-    float: right;
-    letter-spacing: 3px;
-    margin-top: 23px;
+/*Logo and Navigation Links*/
+#logo {
+    margin: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #394648;
 }
 
-#menu li {
-    float: left;
-    margin-right: 25px;
-    list-style-type: none;
+#logo a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #394648;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 26px;
 }
 
 #menu a {
-    color: #F8E9E9;
+    display: inline;
+    padding: 15px;
     text-decoration: none;
-    background-color: #394648;
-    height: 30px;
-    border-radius: 5px;
-    padding: 5px;
+    color: #394648;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 #menu a:hover {
-    color: #394648;
-    background-color: #F8E9E9;
-    transition: all 0.4s ease;
-    border: 1px solid #394648;
+    background-color: #69995D;
+    color: #F8E9E9;
+    border-radius: 5px;
 }
 
-#menu .active {
-    color: #69995D;
+.active {
+    background-color: #69995D;
+    color: #F8E9E9;
+    border-radius: 5px;
+}
+
+#openMenu {
+    font-size: 32px;
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        background: #F8E9E9;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    #openMenu {
+        display: block;
+    }
 }
 
 /*Main section of Homepage*/
