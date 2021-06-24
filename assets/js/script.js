@@ -80,6 +80,7 @@ refresh_icon.onclick = ()=> {
     next_btn.style.display = 'none';
     timeOff.textContent = "Time Left";
 }
+
 // If the quit quiz button is clicked
 quit_quiz.onclick = ()=> {
     window.location.reload();

@@ -83,7 +83,8 @@ h2 {
 /*Main section of Homepage*/
 
 #home_area,
-#message_area {
+#message_area,
+#help_area {
     width: 100%;
     height: 700px;
     overflow: hidden;
@@ -495,27 +496,15 @@ button.restart {
 
 /*Main section of help page*/
 
-#help_area {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-}
-
 .help_box {
     width: 600px;
-    height: 650px;
+    height: 530px;
     color: #394648;
     background-color: #F8E9E9;
     border-radius: 5px;
     text-align: center;
-
-    /*Correct the code above*/
-    top: 66%;
 }
 
-.link {
-    color: #69995D;
-}
 
 /*Style the form*/
 
