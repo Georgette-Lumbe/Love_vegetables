@@ -46,12 +46,12 @@ h2 {
 /*Navigation Links*/
 
 #menu {
-    color: #394648;
+    color: #F8E9E9;
     font-size: 120%;
     font-weight: 200;
     float: right;
     letter-spacing: 3px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 #menu li {
@@ -61,16 +61,23 @@ h2 {
 }
 
 #menu a {
-    color: inherit;
+    color: #F8E9E9;
     text-decoration: none;
+    background-color: #394648;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #menu a:hover {
-    border-bottom: 2px solid #394648;
+    color: #394648;
+    background-color: #F8E9E9;
+    transition: all 0.4s ease;
+    border: 1px solid #394648;
 }
 
-.active {
-    border-bottom: 2px solid #394648;
+#menu .active {
+    color: #69995D;
 }
 
 /*Main section of Homepage*/
