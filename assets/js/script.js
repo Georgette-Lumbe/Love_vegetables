@@ -2,8 +2,8 @@
 
 const start_btn = document.querySelector(".start_btn button");
 const rules_box = document.querySelector(".rules_box");
-const exit_btn = rules_box.querySelector(".buttons .quit");
-const continue_btn = rules_box.querySelector(".buttons .restart");
+const exit_btn = rules_box.querySelector(".quit");
+const continue_btn = rules_box.querySelector(".restart");
 const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector('.option_list');
 const timeCount = document.querySelector('.timer_seconds');
@@ -90,7 +90,7 @@ leave_icon.onclick = ()=> {
     window.location.reload();
 }
 
-//If Next Button clicked
+//If Next Button is clicked
 next_btn.onclick = ()=> {
     if(que_count < questions.length -1){
         que_count++;

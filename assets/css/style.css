@@ -75,7 +75,8 @@ h2 {
 
 /*Main section of Homepage*/
 
-#home_area {
+#home_area,
+#message_area {
     width: 100%;
     height: 700px;
     overflow: hidden;
@@ -86,7 +87,7 @@ h2 {
 .quiz_box,
 .feedback_box,
 .help_box,
-.submitBox {
+.messageBox {
     position: absolute;
     top: 58%;
     left: 50%;
@@ -231,6 +232,7 @@ button.restart {
     background-color: #F8E9E9;
     border-radius: 5px;
     
+    /*Hide the quiz box*/
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
@@ -442,6 +444,7 @@ button.restart {
     justify-content: space-between;
     text-align: center;
 
+    /*Hide the feedback box*/
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
@@ -560,7 +563,7 @@ input[type=submit] {
 
 /*Submit Box*/
 
-.submitBox {
+.messageBox {
     background:#F8E9E9;
     color: #394648;
     width: 450px;
@@ -571,13 +574,9 @@ input[type=submit] {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);
 }
 
-.submitIcon {
+.messageIcon {
     font-size: 100px;
     color: #69995D;
     margin-bottom: 10px;
