@@ -85,7 +85,8 @@ h2 {
 .rules_box,
 .quiz_box,
 .feedback_box,
-.help_box {
+.help_box,
+.submitBox {
     position: absolute;
     top: 58%;
     left: 50%;
@@ -556,6 +557,37 @@ input[type=submit] {
     color: #69995D;
     background-color: #F8E9E9;
 }
+
+/*Submit Box*/
+
+.submitBox {
+    background:#F8E9E9;
+    color: #394648;
+    width: 450px;
+    height: 250px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.submitIcon {
+    font-size: 100px;
+    color: #69995D;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-weight: 600;
+    font-size: 18px;
+}
+
     
 /*Footer*/
 
