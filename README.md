@@ -373,7 +373,7 @@ The developper met some issues durieng the development of the website, below are
 5. [GitHub](https://github.com/) was used to store the project after pushing.
 6. [Am I Responsive?](http://ami.responsivedesign.is/#) was used to view the responsive design throughout the process and to generate image mock-ups for use.
 7. [Coolors](https://coolors.co/) was used for colour inspiration and pallet
-8. [Favicon](https://favicon.io/) was used to generate a favicon for the Love Vegetables.
+8. [Favicon](https://favicon.io/favicon-converter/) was used to convert an image to a favicon for the Love Vegetables.
 9. 
 
 # Deployment
