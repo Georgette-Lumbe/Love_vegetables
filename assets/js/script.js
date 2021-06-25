@@ -116,7 +116,7 @@ next_btn.onclick = ()=> {
 //Getting questions and options from array
 function displayQuestions(index){
     const questions_text = document.querySelector('.questions_text');
-    let que_tag = '<span>'+ questions[index].numb + '. ' + questions[index].question +'</span>';
+    let que_tag = '<span>' + questions[index].numb + '. ' + questions[index].question +'</span>';
     let option_tag = '<div class="option">'+ questions[index].options[0] +'<span></span></div>'
                      + '<div class="option">'+ questions[index].options[1] +'<span></span></div>'
                      + '<div class="option">'+ questions[index].options[2] +'<span></span></div>'

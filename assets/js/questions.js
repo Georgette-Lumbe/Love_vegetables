@@ -1,3 +1,4 @@
+//Questions and options are sourced from https://www.ultimatequizquestions.com/vegetable-quiz-questions/
 //Creating an array and passing the number, questions, options, and answers
 
 let questions = [

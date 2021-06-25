@@ -32,7 +32,7 @@ nav {
     color: #394648;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     text-align: center;
 }
 
@@ -93,12 +93,12 @@ h2 {
     display: none;
 }
 
-@media (max-width: 800px) {
+/*Media queries*/
+/*@media (max-width: 800px) {
 
     #menu {
         display: none;
-        width: 100%;
-        flex-direction: column;
+        width: 80%;
     }
 
     #menu li {
@@ -117,7 +117,26 @@ h2 {
     #openMenu {
         display: block;
     }
-}
+
+    #home_area,
+    #message_area,
+    #help_area {
+    width: 90%;
+    }
+
+    .start_btn,
+    .rules_box,
+    .quiz_box,
+    .feedback_box,
+    .help_box,
+    .messageBox {
+    top: 65%;
+    }
+
+    .text {
+        top: 55%;
+    }
+}*/
 
 /*Main section of Homepage*/
 
@@ -654,4 +673,121 @@ footer {
 #social_media i:hover {
     color: #69995D;
     cursor: pointer;
+}
+
+/*Media queries*/
+
+/*Small devices (phones, 767px and down) */
+
+@media (max-width: 767px) {
+
+    .rules_box{
+        width: 450px;
+    }
+
+    .rules_title { 
+        font-size: 30px;
+        width: 410px;
+        padding: 0 20px;
+        }
+        
+    .rules_list {
+        padding: 15px 20px;
+    }
+        
+    .rule {
+        font-size: 16px;
+        }
+    
+    .quiz_box {
+        width: 400px;
+    }
+
+    .questions_text {
+        font-size: 20px;
+    }
+
+    .feedback_box,
+    .messageBox {
+        width: 400px;
+        padding: 15px;
+        top: 50%;
+    }
+
+    /*Complete the code above*/
+    .messageBox{
+        height: 280px;
+    }
+
+    .help_box {
+        width: 400px;
+    }
+}
+
+
+/*Small devices (phones, 550px and down) */
+
+@media (max-width: 510px) {
+
+    #home_area {
+        height: 750px;
+    }
+
+    #logo {
+        margin: 20px 5px;
+        font-size: 25px;
+    }
+
+    #menu {
+        margin: 6px 10px;
+        display: block;
+    }
+
+    #menu a {
+        display: flex;
+        padding: 5px;
+    }
+
+    .text {
+        left: 55%;
+    }
+
+    .rules_box {
+        width: 300px;
+    }
+
+    .rules_title { 
+        font-size: 25px;
+        width: 270px;
+        padding: 0 15px;
+        }
+
+    .rules_list {
+        padding: 15px;
+    }
+
+    .quiz_box {
+        width: 350px;
+    }
+
+    .time_line {
+        display: none;
+    }
+
+    .help_box {
+        width: 300px;
+    }
+
+    textarea {
+        max-width: 82%;
+    }
+
+    .feedback_box,
+    .messageBox {
+        width: 300px;
+    }
+
+    .score_text span {
+        padding-left: 0;
+    }
 }
